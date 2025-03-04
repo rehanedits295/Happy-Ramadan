@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#main{
+    top: 0;
+    width: 100%;
+    height: 680px;
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+#main h1{
+    margin-left: 330px;
+    font-family: "Sigmar", sans-serif;
+    font-size: 80px;
+    letter-spacing: 9px;
+    animation: slideDown 1.5s ease-in-out;
+}
+
+#main h2{
+    margin-left: 210px;
+    font-family: "Sigmar", sans-serif;
+    font-size: 80px;
+    letter-spacing: 9px;
+    margin-top: -40px;
+    animation: slideDown 1.5s ease-in-out;
+}
+
+#main span{
+    margin-left: 380px;
+    font-weight: 500;
+    font-size: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#main p{
+    text-align: center;
+    padding: 10px 190px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#main h5{
+    margin-left: 220px;
+    font-weight: 500;
+    font-size: 17px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #main h1, #main h2 {
+        font-size: 45px;
+        letter-spacing: 3px;
+    }
+
+    #main p {
+        font-size: 16px;
+        padding: 10px 15px;
+        
+    animation: fadeIn 2s ease-in-out;
+    }
+}
+
+@media (max-width: 480px) {
+    #main h1, #main h2 {
+        font-size: 35px;
+        letter-spacing: 2px;
+    }
+
+    #main span {
+        font-size: 18px;
+    }
+
+    #main p {
+        font-size: 14px;
+        padding: 10px;
+
+    animation: fadeIn 2s ease-in-out;
+    }
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
